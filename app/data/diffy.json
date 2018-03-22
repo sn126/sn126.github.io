@@ -26,7 +26,7 @@
          ],
          "social":{
             "twitter": "https://twitter.com/pzdk",
-            "linked_in": "https://www.linkedin.com/in/puneetkhanduri/"
+            "linkedin": "https://www.linkedin.com/in/puneetkhanduri/"
          }
       },
       {
@@ -47,15 +47,15 @@
 
    ],
    "contact":{
-      "github": "twitter/diffy",
+      "github": "opendiffy/diffy",
       "twitter": "diffyproject",
-      "email": "mailto:info@rysa.in?subject=Requesting a Demo!"
+      "email": "mailto:info@diffy.ai?subject=Requesting a Demo!"
    },
    "experience":[
       {
          "fa_class":"fa-spin fa-th-large",
          "title":"Diffy",
-         "link": "https://github.com/twitter/diffy",
+         "link": "https://github.com/opendiffy/diffy",
          "loc":"San Fransisco, CA",
          "dates":"2018 - current",
          "position":"Co-Founder / CTO",
