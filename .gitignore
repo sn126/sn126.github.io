@@ -1,0 +1,21 @@
+.DS_Store
+
+venv
+
+.idea/*
+
+node_modules/*
+
+app/static/styles/css
+app/static/scripts/js
+app/static/bower_components
+app/static/dist
+
+*.pyc
+*.log
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
