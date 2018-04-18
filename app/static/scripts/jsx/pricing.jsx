@@ -10,7 +10,7 @@ var PricingComponent = React.createClass({
         <div>
           <div className="container">
             <div className="section-title text-center center">
-              <h2>Pricing</h2>
+              <h2>Plans</h2>
               <div className="clearfix"></div>
             </div>
             <div className="row">
@@ -18,7 +18,7 @@ var PricingComponent = React.createClass({
               <div className="card col-md-4">
                 <h4><b>Self Hosted</b></h4>
                 <div className="container">
-                  <p className="price">Open Source</p>
+                  <p className="price">&nbsp;</p>
                   <ul>
                     <li>Grab the source from <a href="https://github.com/opendiffy/diffy">Github</a></li>
                     <li>Configure, Compile and Run!</li>
@@ -31,7 +31,7 @@ var PricingComponent = React.createClass({
               <div className="card col-md-4">
                 <h4><b>Pilot</b></h4>
                 <div className="container">
-                  <p className="price">Free</p>
+                  <p className="price">&nbsp;</p>
                   <ul>
                     <li>Diffy provided as a hosted service</li>
                     <li>Use the admin console to configure Diffy</li>
@@ -44,7 +44,7 @@ var PricingComponent = React.createClass({
               <div className="card col-md-4">
                 <h4><b>Growth</b></h4>
                 <div className="container">
-                  <p className="price">Contact Us</p>
+                  <p className="price">&nbsp;</p>
                   <ul>
                     <li>All features from the Pilot package</li>
                     <li>Auto scaling of Diffy instances</li>
