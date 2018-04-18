@@ -31,8 +31,8 @@ PROD: www.khanduri.com
  - `brew install docker`
 
 ## Build
- - `docker build -t docker-khanduri .`
- - `docker run -d --name khanduri-01 -p 5000:5000 -e PORT=5000 docker-khanduri`
+ - `docker build -t docker-diffy .`
+ - `docker run -d --name diffy-01 -p 5000:5000 -e PORT=5000 docker-diffy`
 
 
 ------------------------------
@@ -42,7 +42,7 @@ PROD: www.khanduri.com
  - `heroku login`
  - `heroku plugins:install heroku-container-registry`              # run once globally
  - `heroku container:login`
- - `heroku apps:create khanduri-staging --remote heroku-staging`   # Creating a new app and adding remote
+ - `heroku apps:create diffy-staging --remote heroku-staging`   # Creating a new app and adding remote
  - `heroku git:remote -a heroku-staging`                           # Adding remote repo for heroku stating
  - `git remote rename heroku heroku-staging`
 
@@ -55,7 +55,7 @@ PROD: www.khanduri.com
 # PROD Push - Docker - Heroku:
 
 ## Setup
- - `heroku apps:create khanduri --remote heroku-prod`
+ - `heroku apps:create diffy --remote heroku-prod`
  - `heroku git:remote -a heroku-prod`
 
 ## Build
@@ -86,12 +86,12 @@ PROD: www.khanduri.com
 ## TODO (clean these up):
  - `docker images`
  - `docker rmi $(docker images | grep "<none>" | awk '{print $3}')`
- - `docker exec -ti khanduri-01 bash`
+ - `docker exec -ti diffy-01 bash`
  - `lsof -i tcp:8000`
  - `rm -rf /Users/prashantkhanduri/Library/Containers/com.docker.docker/Data/*`
- - `docker logs khanduri-01`
- - `docker exec -ti khanduri-01 bash`
+ - `docker logs diffy-01`
+ - `docker exec -ti diffy-01 bash`
 
  - `docker ps -a`
- - `docker rm khanduri-01`
- - `docker stop khanduri-01`
+ - `docker rm diffy-01`
+ - `docker stop diffy-01`

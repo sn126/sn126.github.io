@@ -9,7 +9,7 @@ var ServicesComponent = React.createClass({
         <div className="text-center">
           <div className="container">
             <div className="section-title center">
-              <h2>Our Services</h2>
+              <h2>Features</h2>
             </div>
             <div className="space"></div>
             <div className="row">
@@ -22,7 +22,7 @@ var ServicesComponent = React.createClass({
               <div className="separator col-md-3 col-sm-6">
                 <div className="service"> <i className="fa fa-puzzle-piece"></i>
                   <h3>Plugins</h3>
-                  <p>Support for other popular protocols. Custom protocol inquiries are welcome!</p>
+                  <p>Support for other popular protocols. <a href="mailto:info@diffy.ai?subject=Request for custom protocol support">Contact us</a> for custom protocol support!</p>
                 </div>
               </div>
               <div className="separator col-md-3 col-sm-6">

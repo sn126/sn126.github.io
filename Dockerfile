@@ -5,16 +5,20 @@ RUN apk add --no-cache python python-dev py-pip
 RUN apk add --no-cache yarn
 
 
-COPY . /code
+COPY requirements.txt /code/requirements.txt
 WORKDIR /code
 RUN pip install -r requirements.txt
+
+COPY package.json /code/package.json
+WORKDIR /code
 RUN yarn install
+
+
+COPY . /code
 RUN yarn run build .
 
 
-WORKDIR /code
 EXPOSE 5000
-
 
 # $PORT is set by Heroku
 CMD gunicorn --bind 0.0.0.0:$PORT wsgi

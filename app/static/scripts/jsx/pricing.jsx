@@ -22,7 +22,7 @@ var PricingComponent = React.createClass({
                   <ul>
                     <li>Grab the source from <a href="https://github.com/opendiffy/diffy">Github</a></li>
                     <li>Configure, Compile and Run!</li>
-                    <li>You maintain your infrastructure.</li>
+                    <li>You maintain your infrastructure</li>
                   </ul>
                   <a href="https://github.com/opendiffy/diffy" className="btn btn-default">View Source</a>
                 </div>
@@ -44,7 +44,7 @@ var PricingComponent = React.createClass({
               <div className="card col-md-4">
                 <h4><b>Growth</b></h4>
                 <div className="container">
-                  <p className="price">Contact US</p>
+                  <p className="price">Contact Us</p>
                   <ul>
                     <li>All features from the Pilot package</li>
                     <li>Auto scaling of Diffy instances</li>
