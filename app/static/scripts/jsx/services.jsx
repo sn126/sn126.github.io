@@ -27,7 +27,7 @@ var ServicesComponent = React.createClass({
               </div>
               <div className="separator col-md-3 col-sm-6">
                 <div className="service"> <i className="fa fa-graduation-cap"></i>
-                  <h3>Intellegence</h3>
+                  <h3>Intelligence</h3>
                   <p>Smarter (AI powered) noise cancellation</p>
                 </div>
               </div>
