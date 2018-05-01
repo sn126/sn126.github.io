@@ -10,7 +10,7 @@ var AboutComponent = React.createClass({
 
               <h2>About Diffy</h2>
               <p>
-              Diffy finds potential bugs in your service using running instances of your new code and your old code side by side. Diffy behaves as a proxy and multicasts whatever requests it receives to each of the running instances. It then compares the responses, and reports any regressions that may surface from those comparisons. 
+              <a href="https://github.com/opendiffy/diffy">Diffy</a> finds potential bugs in your service using running instances of your new code and your old code side by side. Diffy behaves as a proxy and multicasts whatever requests it receives to each of the running instances. It then compares the responses, and reports any regressions that may surface from those comparisons. 
               </p>
 
               <p>
@@ -29,7 +29,7 @@ var AboutComponent = React.createClass({
                   <li>A secondary instance running the same known-good code as the primary instance</li>
                 </ul>
 
-                <div class="col-md-12"><img src="static/images/diffy-explained.png" class="img-responsive"/></div>
+                <div class="col-md-12"><a href="https://github.com/opendiffy/diffy"><img src="static/images/diffy-explained.png" class="img-responsive"/></a></div>
 
                 <p>As Diffy receives a request, it multicasts the traffic to your candidate, primary, and secondary instances. When those services send responses back, Diffy compares those responses and looks for:</p>
 
