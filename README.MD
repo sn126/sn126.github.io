@@ -42,13 +42,13 @@ PROD: www.khanduri.com
  - `heroku login`
  - `heroku plugins:install heroku-container-registry`              # run once globally
  - `heroku container:login`
- - `heroku apps:create diffy-staging --remote heroku-staging`   # Creating a new app and adding remote
- - `heroku git:remote -a heroku-staging`                           # Adding remote repo for heroku stating
- - `git remote rename heroku heroku-staging`
+ - `heroku apps:create diffy-staging --remote heroku-stage`        # Creating a new app and adding remote
+ - `heroku git:remote -a heroku-stage`                             # Adding remote repo for heroku stating
+ - `git remote rename heroku heroku-stage`
 
 ## Build
- - `heroku container:push web --remote heroku-staging`
- - `heroku open`
+ - `heroku container:push web --remote heroku-stage`
+ - `heroku open --app diffyai-stage`
 
 
 ------------------------------
