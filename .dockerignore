@@ -1,0 +1,15 @@
+.gitignore
+README*
+logs/*
+
+build
+node_modules
+venv/*
+.idea/*
+.git/*
+*__pycache__*
+*.csv
+
+*.pyc
+.DS_Store
+TODO

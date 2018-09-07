@@ -48,6 +48,7 @@ PROD: www.khanduri.com
 
 ## Build
  - `heroku container:push web --remote heroku-stage`
+ - `heroku container:release web --remote heroku-stage`
  - `heroku open --app diffyai-stage`
 
 
@@ -60,6 +61,7 @@ PROD: www.khanduri.com
 
 ## Build
  - `heroku container:push web --remote heroku-prod`
+ - `heroku container:release web --remote heroku-stage`
  - `heroku logs --remote heroku-prod`
 
 
