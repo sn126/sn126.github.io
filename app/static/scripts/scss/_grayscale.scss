@@ -17,38 +17,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $grayscale-headline-font-family;
   font-weight: 700;
   letter-spacing: 1px;
-}
-
-#services h3 {
-  text-decoration: underline;
-}
-
-#services .separator {
-  border-left: thin solid $grayscale-text-light;
+  color: inherit;
 }
 
 p {
   margin: 0 0 25px;
   font-size: 18px;
   line-height: 1.5;
-}
-
-#services p{
-  text-align: center;
-}
-
-#about ul {
- text-align: left; 
-}
-
-@media(min-width:767px) {
-  p {
-    margin: 0 0 15px;
-    font-size: 20px;
-    line-height: 1.6;
-    text-align: justify;
-    text-justify: inter-word;
-  }
 }
 
 a {
@@ -62,6 +37,10 @@ a {
     color: darken($grayscale-link, 0.5);
   }
 }
+
+
+
+
 
 .light {
   font-weight: 400;
@@ -121,31 +100,9 @@ a {
   }
 }
 
-@media(min-width:767px) {
-  .navbar {
-    padding: 20px 0;
-    border-bottom: none;
-    letter-spacing: 1px;
-    background: transparent;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
-  }
-
-  .top-nav-collapse {
-    padding: 0;
-    background-color: $grayscale-dark;
-  }
-
-  .navbar-custom.top-nav-collapse {
-    border-bottom: 1px solid transparentize($grayscale-light, 0.7);
-  }
-}
-
 .intro {background: $grayscale-dark url(../../images/diffy-bg.jpg) no-repeat scroll bottom center;}
 .error {background: $grayscale-dark url(../../images/404-bg.jpg) no-repeat scroll bottom center;}
 .diffy {background: $grayscale-dark url(../../images/diffy-bg.jpg) no-repeat scroll bottom center;}
-
 
 .intro, .error, .diffy {
   display: table;
@@ -153,7 +110,6 @@ a {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: $grayscale-intro;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -169,24 +125,6 @@ a {
       font-size: 18px;
       color: $grayscale-heading;
       text-align: center;
-    }
-  }
-}
-
-@media(min-width:767px) {
-  .intro, .error, .diffy {
-    height: 100%;
-    padding: 0;
-    .intro-body {
-      .brand-heading {
-        font-size: 100px;
-        color: $grayscale-heading;
-      }
-
-      .intro-text {
-        font-size: 25px;
-        text-align: center;
-      }
     }
   }
 }
@@ -211,40 +149,10 @@ a {
   }
 }
 
-
 .content-section {
   padding-top: 50px;
   padding-bottom: 50px;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-.learn-section {
-  width: 100%;
-  padding: 50px 0;
-  color: $grayscale-light;
-  background: $grayscale-dark url(../../images/learn-bg.jpg) no-repeat scroll center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.education-section {
-  width: 100%;
-  padding: 50px 0;
-  color: $grayscale-light;
-  background: $grayscale-dark url(../../images/education-bg.jpg) no-repeat scroll center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-@media(min-width:767px) {
-  .content-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
 }
 
 .btn {
@@ -266,31 +174,11 @@ a {
   }
 }
 
+
 ul.banner-social-buttons {
   margin-top: 0;
 }
 
-@media(max-width:1199px) {
-  ul.banner-social-buttons {
-    margin-top: 15px;
-  }
-  .row {
-    margin: 0px;
-  }
-}
-
-@media(max-width:767px) {
-  ul.banner-social-buttons {
-    li {
-      display: block;
-      margin-bottom: 20px;
-      padding: 0;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
 
 footer {
   padding-top: 50px;
@@ -351,20 +239,42 @@ body {
   transition: 0.5s;
 }
 
+
+
+
+#features{
+  h3 {
+    text-decoration: underline;
+  }
+  p {
+    text-align: center;
+  }
+  .separator {
+    border-left: 1px solid $grayscale-text-light;
+  }
+  .feature p {
+    font-size: 15px;
+  }
+  .feature .fa {
+    font-size: 50px;
+    padding: 5px;
+    color: $grayscale-icons;
+  }
+}
+
+
+#about ul {
+ text-align: left;
+}
+
+
+
 #team p {
   font-size: 12px;
 }
 
-.service p {
-  font-size: 15px;
-}
-.service .fa {
-  font-size: 50px;
-  padding: 5px;
-  color: $grayscale-icons;
-}
 
-#services, #contact {
+#features, #contact {
   color: $grayscale-text-light;
   text-align: center;
   background: linear-gradient(to right, $grayscale-gradient-high, $grayscale-gradient-low);
@@ -388,33 +298,124 @@ body {
 #pricing {
   color: $grayscale-intro;
   background: $grayscale-light;
+
+  .card {
+      padding: 10px;
+      transition: 0.3s;
+      h4 {
+        border-radius: 25px;
+        text-align: center;
+        font-size: 26px;
+        margin: 0px;
+        margin-bottom: 10px;
+        background: linear-gradient(to right, $grayscale-gradient-bare-high, $grayscale-gradient-bare-low);
+        padding: 30px;
+      }
+      .price {
+        font-size: 18px;
+        color: $grayscale-card;
+      }
+      .btn {
+        margin: 30px;
+        border-radius: 30px;
+      }
+  }
+  .card:hover {
+      box-shadow: 0px 0px 2px 2px $grayscale-card;
+  }
 }
 
-#pricing .card {
-    padding: 10px;
-    transition: 0.3s;
+iframe {
+  height: 315px;
+  width: 560px;
 }
 
-#pricing .card:hover {
-    box-shadow: 0px 0px 4px 4px $grayscale-card;
+
+@media(min-width:767px) {
+
+  p {
+    margin: 0 0 15px;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .navbar {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+    background-color: $grayscale-dark;
+  }
+
+  .navbar-custom.top-nav-collapse {
+    border-bottom: 1px solid transparentize($grayscale-light, 0.7);
+  }
+
+  .intro, .error, .diffy {
+    height: 100%;
+    padding: 0;
+    .intro-body {
+      .brand-heading {
+        font-size: 100px;
+        color: $grayscale-heading;
+      }
+
+      .intro-text {
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+  }
+
+  .content-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
-#pricing .card h4 {
-  border-radius: 25px;
-  text-align: center;
-  font-size: 26px;
-  margin: 0px;
-  margin-bottom: 10px;
-  background: linear-gradient(to right, $grayscale-gradient-bare-high, $grayscale-gradient-bare-low);
-  padding: 30px;
+@media(max-width:1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+  .row {
+    margin: 0px;
+  }
 }
 
-#pricing .card .price {
-  font-size: 18px;
-  color: $grayscale-card;
-}
+@media(max-width:767px) {
+  ul.banner-social-buttons {
+    li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 
-#pricing .card .btn {
-  margin: 30px;
-  border-radius: 30px;
+}
+@media(max-width:375px) {
+  h1 {
+    color: $primary;
+  }
+  iframe {
+    height: 300px;
+    width: 350px;
+  }
+  #features{
+    .separator {
+      border-left: 0px solid $grayscale-text-light;
+    }
+  }
+
 }

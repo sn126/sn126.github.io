@@ -7,7 +7,7 @@ import './jsx/team';
 import './jsx/about';
 import './jsx/navigation';
 import './jsx/profile';
-import './jsx/services';
+import './jsx/features';
 import './jsx/pricing';
 
 

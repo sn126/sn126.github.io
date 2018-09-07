@@ -31,8 +31,8 @@ PROD: www.khanduri.com
  - `brew install docker`
 
 ## Build
- - `docker build -t docker-diffy .`
- - `docker run -d --name diffy-01 -p 5000:5000 -e PORT=5000 docker-diffy`
+ - `docker build -t docker-diffy-ai .`
+ - `docker run -d --name diffy-01 -p 5000:5000 -e PORT=5000 docker-diffy-ai`
 
 
 ------------------------------
