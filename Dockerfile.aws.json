@@ -1,4 +1,0 @@
-{
-    "AWSEBDockerrunVersion": "1.12.6",
-    "Logging": "/var/eb_log"
-}
